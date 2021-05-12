@@ -1,0 +1,28 @@
+.faq__top {
+  padding-bottom: 77px;
+}
+
+.faq__inner {
+  max-width: 880px;
+  margin: 158px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.faq__list {
+  margin-top: 33px;
+}
+
+.faq__item {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 500;
+  border-top: 1px solid #000000;
+  padding: 34px 0 36px;
+  cursor: pointer;
+}
