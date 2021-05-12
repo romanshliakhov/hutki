@@ -1,89 +1,96 @@
 .system {
-    margin-bottom: 17px;
+  margin-bottom: 17px;
 }
 
 .system__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .system__right {
-    max-width: 550px;
+  max-width: 550px;
 }
 
 .system__title {
-    font-size: 70px;
-    line-height: 70px;
-    font-weight: 500;    
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 70px;
 }
 
 .system__subtitle {
-    margin-top: 20px;
-    font-size: 22px;
-    line-height: 29px;
-    font-weight: 400;
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
 }
 
 .system__btns {
-    margin-top: 52px;
-    
+  margin-top: 52px;
 }
 
 .system__btn {
-    height: 48px;
-    font-weight: 500;
-    background-color: transparent;
-    border: 1px solid #8D96A4;
+  height: 48px;
+
+  font-weight: 500;
+
+  background-color: transparent;
+  border: 1px solid #8d96a4;
 }
 
 .system__btn-reg {
-    background-color: #FF5B22;
-    width: 262px;
-    border: 1px solid #FF5B22;
-    color: #fff;
+  width: 262px;
+
+  color: #ffffff;
+
+  background-color: #ff5b22;
+  border: 1px solid #ff5b22;
 }
 
 .system__btn-propose {
-    margin-left: 20px;
-    width: 164px;
+  width: 164px;
+  margin-left: 20px;
 }
 
 .system__bot {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .system__bot-item {
-    max-width: 660px;
-    width: 100%;    
-    border-top: 2px solid #FF5B22;
-    border-right: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 660px;
 
-    &:last-child {
-        border-top: 1px solid #000;
-        border-right: none;
-    }
+  text-align: center;
+
+  border-top: 2px solid #ff5b22;
+  border-right: 1px solid #000000;
+
+
+  &:last-child {
+    border-top: 1px solid #000000;
+    border-right: none;
+  }
 }
 
 .system__bot-link {
-    margin-top: 25px;
-    font-size: 30px;
-    line-height: 45px;
-    color: #FF5B22;
+  margin-top: 25px;
+
+  font-size: 30px;
+  line-height: 45px;
+  color: #ff5b22;
 }
 
 .system__bot-descr {
-    max-width: 335px;
-    line-height: 23px;
-    
+  max-width: 335px;
+
+  line-height: 23px;
 }
 

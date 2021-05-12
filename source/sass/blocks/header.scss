@@ -1,56 +1,66 @@
+.header__bg {
+  background-color: #edf7ff;
+}
+
 .header__inner {
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
 }
 
 .header__logo {
-    max-width: 130px;
-    max-height: 23px;
+  max-width: 130px;
+  max-height: 23px;
 }
 
 .header__nav {
-    flex-grow: 0.6;
-    display: flex;    
+  display: flex;
+  flex-grow: 0.6;
 }
 
 .header__nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav-item {
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-    position: relative;
-    cursor: pointer;
+  position: relative;
 
-    &+& {
-        margin-left: 35px;
-    }
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  cursor: pointer;
+
+  & + & {
+    margin-left: 35px;
+  }
 }
 
 .header__reg {
-    margin-right: 16px;
-    width: 140px;
-    height: 40px;
-    background-color: transparent;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-    border: 1px solid #8D96A4;
+  width: 140px;
+  height: 40px;
+  margin-right: 16px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  background-color: transparent;
+  border: 1px solid #8d96a4;
 }
 
 .header__propose {
-    width: 215px;
-    height: 40px;
-    background-color: #FF5B22;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-    color: #fff;
-    border: 1px solid #FF5B22;
+  width: 215px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #ff5b22;
+  border: 1px solid #ff5b22;
 }

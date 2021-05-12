@@ -15,7 +15,7 @@ const svgstore = require("gulp-svgstore");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
 const del = require("del");
-const uglify = require("gulp-uglify-es").default;
+const uglify = require('gulp-uglify-es').default;
 const htmlmin = require("gulp-htmlmin");
 
 gulp.task("css", () => {
@@ -76,9 +76,9 @@ gulp.task("raster images", () => {
 });
 
 gulp.task("webp", () => {
-  return gulp.src("build/img/*.{png,jpg,jpeg}")
+  return gulp.src("build/**/*.{png,jpg,jpeg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("vector images", () => {
@@ -110,7 +110,7 @@ gulp.task("html", () => {
 gulp.task("copy", () => {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**/*.{png,jpg,jpeg,svg}",
+      "source/img/**/*.{png,jpg,jpeg,svg,gif}",
       "source/*.ico"
     ], {
       base: "source"
