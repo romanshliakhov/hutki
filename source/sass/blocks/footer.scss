@@ -140,6 +140,17 @@
   background-color: #ff5b22;
   border: 1px solid #ff5b22;
   color: #ffffff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e93d02;
+    border: 1px solid #e93d02;
+  }
+}
+
+.footer__btn-fill:hover {
+  color: #ff5b22;
+  border: 1px solid #ff5b22;
 }
 
 .footer__bot {
