@@ -1,12 +1,16 @@
+.faq {
+  margin: 158px 0;
+}
+
 .faq__top {
   padding-bottom: 77px;
 }
 
 .faq__inner {
   max-width: 880px;
-  margin: 158px auto;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .faq__text {
