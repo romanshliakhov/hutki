@@ -1,9 +1,27 @@
 .error {
-  border-top: 1px solid #000000;
   margin: 0 auto;
   margin-top: 160px;
   margin-bottom: 134px;
   max-width: 736px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 93px;
+    left: 0;
+    top: 0;
+    border: 1px solid #000000;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 93px;
+    right: 0;
+    top: 0;
+    border: 1px solid #000000;
+  }
 }
 
 .error__inner {
@@ -13,6 +31,27 @@
   border: none;
   border-top: 2px solid #ff5b22;
   text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    transform: rotate(90deg);
+    left: -31px;
+    top: 29px;
+    border: 1px solid #000000;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    transform: rotate(90deg);
+    right: -31px;
+    top: 29px;
+    border: 1px solid #000000;
+  }
 }
 
 .error__type {
@@ -45,4 +84,10 @@
   border-radius: 4px;
   color: #ffffff;
   background-color: #ff5b22;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e93d02;
+    border: 1px solid #e93d02;
+  }
 }

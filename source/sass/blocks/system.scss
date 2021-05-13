@@ -20,7 +20,6 @@
 
 .system__subtitle {
   margin-top: 20px;
-
   font-weight: 400;
   font-size: 22px;
   line-height: 29px;
@@ -32,25 +31,33 @@
 
 .system__btn {
   height: 48px;
-
   font-weight: 500;
-
   background-color: transparent;
   border: 1px solid #8d96a4;
 }
 
 .system__btn-reg {
-  width: 262px;
+  width: 164px;
+  margin-left: 20px;
+  transition: all 0.3s ease;
 
-  color: #ffffff;
-
-  background-color: #ff5b22;
-  border: 1px solid #ff5b22;
+  &:hover {
+    color: #ff5b22;
+    border: 1px solid #ff5b22;
+  }
 }
 
 .system__btn-propose {
-  width: 164px;
-  margin-left: 20px;
+  width: 262px;
+  color: #ffffff;
+  background-color: #ff5b22;
+  border: 1px solid #ff5b22;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e93d02;
+    border: 1px solid #e93d02;
+  }
 }
 
 .system__bot {
@@ -67,12 +74,9 @@
   align-items: center;
   width: 100%;
   max-width: 660px;
-
   text-align: center;
-
   border-top: 2px solid #ff5b22;
   border-right: 1px solid #000000;
-
 
   &:last-child {
     border-top: 1px solid #000000;
@@ -82,15 +86,23 @@
 
 .system__bot-link {
   margin-top: 25px;
-
   font-size: 30px;
   line-height: 45px;
   color: #ff5b22;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icons/top-right.svg);
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    right: -27px;
+  }
 }
 
 .system__bot-descr {
   max-width: 335px;
-
   line-height: 23px;
 }
-
