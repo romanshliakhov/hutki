@@ -1,0 +1,18 @@
+.blog {
+  margin-top: 90px;
+}
+
+.blog__top {
+  padding-bottom: 89px;
+}
+
+.blog__inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  .latest__item {
+    margin-bottom: 51px;
+    margin-right: 40px;
+  }
+}
+
