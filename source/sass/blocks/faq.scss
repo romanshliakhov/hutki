@@ -23,10 +23,43 @@
 }
 
 .faq__item {
-  font-size: 36px;
-  line-height: 45px;
-  font-weight: 500;
   border-top: 1px solid #000000;
   padding: 34px 0 36px;
   cursor: pointer;
+}
+
+.faq__item-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__question-title {
+  max-width: 850px;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.faq__item-text {
+  margin-top: 33px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #282828;
+}
+
+.faq__item-answer {
+  display: none;
+}
+
+.faq__item--active {
+  transition: all 0.3s ease-in-out;
+
+  .faq__item-arrow {
+    transform: rotate(-180deg);
+  }
+
+  .faq__item-answer {
+    display: block;
+  }
 }
