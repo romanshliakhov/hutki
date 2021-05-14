@@ -155,11 +155,18 @@
     </header>
 
     <main class="main">
-
       <section class="head">
         <div class="container">
           <div class="blog__top top">
             <h1 class="title">Блог</h1>
+            <div class="blog__btns">
+              <button class="blog__btn blog__btn-active" type="button" data-filter=".category-all" data-myorder="1">Все</button>
+              <button class="blog__btn" type="button" data-filter=".category-fin" data-myorder="2">FinTech</button>
+              <button class="blog__btn" type="button" data-filter=".category-erip" data-myorder="3">ЕРИП</button>
+              <button class="blog__btn" type="button" data-filter=".category-epos" data-myorder="4">E-POS</button>
+              <button class="blog__btn" type="button" data-filter=".category-fis" data-myorder="5">Физ. лицам</button>
+              <button class="blog__btn" type="button" data-filter=".category-ur" data-myorder="6">Юр. лицам</button>
+            </div>
           </div>
         </div>
       </section>
@@ -167,7 +174,7 @@
       <section class="blog">
         <div class="container">
             <div class="blog__inner">
-              <div class="latest__item">
+              <div class="latest__item category-all category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news1.jpg" alt="">
@@ -180,7 +187,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-fin category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news2.jpg" alt="">
@@ -193,7 +200,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-erip category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news4.jpg" alt="">
@@ -206,7 +213,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-epos category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news5.jpg" alt="">
@@ -219,7 +226,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-all category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news6.jpg" alt="">
@@ -232,7 +239,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-fin category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news7.jpg" alt="">
@@ -245,7 +252,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-fin category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news8.jpg" alt="">
@@ -258,7 +265,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-ur category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news9.jpg" alt="">
@@ -271,7 +278,7 @@
                 </div>
               </div>
 
-              <div class="latest__item">
+              <div class="latest__item category-fis category-all">
                 <div class="latest__item-wrapper">
                   <div class="latest__item-image">
                     <img src="img/content/blog/news10.jpg" alt="">
@@ -310,9 +317,6 @@
           </div>
         </div>
       </section>
-
-
-
     </main>
   </div>
 
@@ -411,6 +415,8 @@
 
 
   <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/jquery.mixitup.js"></script>
   <script src="js/common.min.js"></script>
 
 </body>

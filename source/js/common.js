@@ -1,14 +1,14 @@
 // accordeon
 
-$('.faq__item-question').click(function(){
-	const parent = $(this).parent();
+$('.faq__item-question').click(function () {
+  const parent = $(this).parent();
 
-	if(parent.hasClass('faq__item--active')) {
-		parent.removeClass('faq__item--active');
-	} else {
-		$('.faq__item').removeClass('faq__item--active')
-		parent.addClass('faq__item--active');
-	}
+  if (parent.hasClass('faq__item--active')) {
+    parent.removeClass('faq__item--active');
+  } else {
+    $('.faq__item').removeClass('faq__item--active')
+    parent.addClass('faq__item--active');
+  }
 });
 
 function fadeAnim() {
@@ -65,3 +65,14 @@ function fadeAnim() {
   });
 }
 
+//mixitup
+
+$(function () {
+  $('.blog__inner').mixItUp({
+      selectors: {
+        target: '.latest__item',
+        filter: '.blog__btn',
+      }
+    }
+  );
+});
