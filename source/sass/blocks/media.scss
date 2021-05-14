@@ -1,0 +1,141 @@
+// laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    min-width: 980px;
+  }
+
+  .footer__mid-item:first-child {
+    padding: 20px 20px 0 0;
+  }
+
+  // main
+  .system__subtitle {
+    br {
+      display: none;
+    }
+  }
+
+  .trust__list {
+    max-width: 1155px;
+    width: 100%;
+  }
+
+  .advantage__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  .advantage__item-image {
+    margin-right: 10px;
+  }
+
+  .advantage__item-descr {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .cost__item {
+    padding: 0 5px 15px;
+  }
+
+  .cost__price::before {
+    left: 60%;
+  }
+
+  .cost__percent::before {
+    left: 57%;
+  }
+
+  .create__right {
+    max-width: 665px;
+  }
+
+  .clients__right {
+    max-width: 720px;
+  }
+
+  .clients__list {
+    max-width: 330px;
+  }
+
+  .clients__type {
+    max-width: 220px;
+  }
+
+  // pricing
+  .pricing__using-list {
+    padding-right: 5px;
+  }
+
+  .pricing__using-list:last-child li {
+    padding-left: 5px;
+  }
+
+  .pricing__using-list:last-child button {
+    margin-left: 5px;
+  }
+
+  .pricing__using-percent {
+    padding-right: 10px;
+  }
+
+  .pricing__note {
+    padding-left: 10px;
+  }
+
+  .pricing__note-number {
+    padding-right: 10px;
+  }
+
+  // contacts {
+  .contacts__left {
+    max-width: 275px;
+  }
+
+  .contacts__right {
+    max-width: 670px;
+  }
+
+  .contacts__list-items {
+    max-width: 210px;
+  }
+
+  .contacts__text + .contacts__text {
+    margin-left: 10px;
+  }
+
+  .contacts__form {
+    .footer__form-input,
+    .footer__btn {
+      max-width: 330px;
+    }
+  }
+
+  // blog-cards
+
+  .publication__item + .publication__item {
+    margin-left: 10px;
+  }
+}
+
+// tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .container {
+    min-width: 750px;
+  }
+}
+
+// mobile
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    min-width: 580px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .container {
+    min-width: 315px;
+  }
+}
