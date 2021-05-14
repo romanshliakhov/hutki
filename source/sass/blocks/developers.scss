@@ -17,7 +17,8 @@
   }
 }
 
-.developers__api {
+.developers__api,
+.developers__cms {
   border-top: 1px solid #000000;
 }
 
@@ -26,6 +27,7 @@
   line-height: 50px;
   margin-top: 16px;
   margin-bottom: 41px;
+  font-weight: 500;
 }
 
 .developers__cms-head {
@@ -38,6 +40,7 @@
   max-width: 582px;
   font-size: 50px;
   line-height: 50px;
+  font-weight: 500;
 }
 
 .developers__cms-subtitle {

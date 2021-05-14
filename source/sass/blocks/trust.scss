@@ -1,23 +1,22 @@
 .trust {
-    height: 330px;  
-    display: flex;
-    flex-direction: column;   
-    justify-content: center;
+  margin: 117px 0 184px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .trust__title {
-    font-size: 22px;
-    line-height: 29px;
-    text-align: center;    
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
 }
 
-.trust__list {    
-    width: 1155px;
-    height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 15px;
+.trust__list {
+  width: 1155px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 15px;
 }
-
