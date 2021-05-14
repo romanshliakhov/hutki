@@ -31,10 +31,38 @@
   font-size: 14px;
   line-height: 17px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 
   & + & {
     margin-left: 35px;
   }
+
+  &:hover {
+    .header__nav-link {
+      color: #ff5b22;
+    }
+
+    .menu {
+      overflow: auto;
+      height: auto;
+      padding-top: 5px;
+    }
+
+    .header__nav-arrow {
+      transition: linear 0.5s;
+      transform: rotate(-180deg);
+
+      path {
+        fill: #ff5b22;
+      }
+    }
+  }
+}
+
+.header__nav-arrow {
+  margin-left: 5px;
 }
 
 .header__btns {

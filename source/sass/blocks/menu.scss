@@ -1,4 +1,36 @@
+.menu {
+  min-width: 320px;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  height: 0;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu__blue {
+  background-color: #edf7ff;
+}
+
+.menu__list {
+  padding: 3px 0;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #ff5b22;
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
 .menu__list-link {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 25px;
+  font-weight: 400;
 }
