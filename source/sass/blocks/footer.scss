@@ -170,6 +170,12 @@
   text-align: right;
 }
 
+.footer__bot-service {
+  span {
+    display: block;
+  }
+}
+
 .footer__bot-service + .footer__bot-service {
   margin-left: 50px;
 }

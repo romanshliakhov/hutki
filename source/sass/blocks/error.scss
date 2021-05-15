@@ -32,6 +32,8 @@
   border-top: 2px solid #ff5b22;
   text-align: center;
   position: relative;
+  z-index: 2;
+
 
   &::before {
     content: "";
