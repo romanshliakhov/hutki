@@ -1,11 +1,7 @@
 .connect__inner {
   margin: 160px 0 165px;
   border-top: 1px solid #000000;
-}
-
-.connect__head {
   display: flex;
-  justify-content: space-between;
 }
 
 .connect__head-title {
@@ -26,7 +22,7 @@
 }
 
 .connect__number {
-  margin-right: 37px;
+  width: 110px;
   font-size: 90px;
   line-height: 90px;
   color: #ff5b22;
@@ -43,17 +39,32 @@
   font-size: 16px;
   line-height: 21px;
   color: #919191;
+  margin-top: 8px;
 
   span {
     color: #ff5b22;
   }
 }
 
-.connect__top {
+.connect__item {
+  max-width: 465px;
+  width: 100%;
   display: flex;
+
+  & + & {
+    margin-top: 20px;
+  }
 }
 
-.connect__item {
-  max-width: 497px;
-  width: 100%;
+.connect__block {
+  width: 50%;
+}
+
+.connect__box {
+  margin-top: 62px;
+}
+
+.connect__item-left {
+  margin-left: -55px;
+  margin-right: 39px;
 }

@@ -35,3 +35,11 @@
   background-color: #ff5b22;
   color: #ffffff;
 }
+
+.pagination__arrow {
+  display: none;
+
+  &:hover {
+    border: 1px solid #919191;
+  }
+}
