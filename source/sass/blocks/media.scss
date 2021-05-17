@@ -2812,6 +2812,13 @@
     .latest__descr {
       display: block;
     }
+
+    .latest__item-info {
+      margin: 26px 0 0;
+      font-size: 14px;
+      line-height: 18px;
+      border: none;
+    }
   }
 
   .pagination {
@@ -2914,9 +2921,10 @@
   }
 
   .latest__item-info {
-    margin: 26px 0 0;
+    margin: 0;
     font-size: 14px;
     line-height: 18px;
+    border: 1px solid;
   }
 
   .latest__title {
@@ -2927,6 +2935,10 @@
     br {
       display: none;
     }
+  }
+
+  .latest__item-image {
+    line-height: 0;
   }
 
   .latest__pubtime {

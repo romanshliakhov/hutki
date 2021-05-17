@@ -1,4 +1,3 @@
-
 // mobile menu
 $(".hamburger").click(function (event) {
   $(".hamburger").toggleClass('hamburger__active'),
@@ -163,14 +162,98 @@ function fadeAnim() {
   });
 }
 
+
+// -----------------  Слайдер --------------------
+
+// const Sliders = {
+//   INDEX_SLIDER: {
+//     ELEMENT: $('.index-slider'),
+//     SETTINGS: {
+//       accessibility: true,
+//       arrows: false,
+//       dots: false,
+//       speed: 1500,
+//       slidesToShow: 1,
+//       infinite: false,
+//     },
+//     BREAKPOINT: 576,
+//     CLASSNAME: '.flex-container',
+//   },
+// }
+
+// function initialazeSlickSlider(slider) {
+//   const {
+//     BREAKPOINT,
+//     SETTINGS,
+//     ELEMENT
+//   } = slider;
+//   (document.documentElement.clientWidth <= BREAKPOINT || BREAKPOINT === undefined) && ELEMENT.slick(SETTINGS);
+// }
+
+// function toggleSlider(slider) {
+//   const {
+//     BREAKPOINT,
+//     ELEMENT,
+//     SETTINGS
+//   } = slider;
+//   document.documentElement.clientWidth > BREAKPOINT && ELEMENT.hasClass('slick-initialized') && ELEMENT.slick('unslick');
+//   document.documentElement.clientWidth <= BREAKPOINT && !ELEMENT.hasClass('slick-initialized') && ELEMENT.slick(SETTINGS);
+// }
+
+// function toggleExtraClass(slider) {
+//   const {
+//     BREAKPOINT,
+//     ELEMENT,
+//     CLASSNAME
+//   } = slider;
+//   document.documentElement.clientWidth > BREAKPOINT && !ELEMENT.hasClass(CLASSNAME) && ELEMENT.addClass(CLASSNAME);
+//   document.documentElement.clientWidth <= BREAKPOINT && ELEMENT.hasClass(CLASSNAME) && ELEMENT.removeClass(CLASSNAME);
+// }
+
+// initialazeSlickSlider(Sliders.INDEX_SLIDER);
+
+// window.addEventListener('resize', () => {
+//   toggleSlider(Sliders.INFORM);
+//   toggleExtraClass(Sliders.INFORM);
+// });
+
+
+// dinamic row
+
+
+ScrollTrigger.create({
+  trigger: ".animate__sec-inner",
+  start: "10px bottom",
+  end: "top top",
+  onUpdate: self => {
+    // console.log("velocity:", self);
+    gsap.to('.animate__sec-inner', {
+      xPercent: -self.progress * 50
+    })
+  }
+});
+
+
+// fade animatiuon
+
+let tl = gsap.timeline();
+
+tl.from(".fade", {opacity: 0, y: 100, duration: 0.7})
+tl.from(".fadeS", {opacity: 0, y: 100, duration: 1})
+tl.from(".fadeR", {opacity: 0, x: 100, duration: 1})
+tl.from(".fadeT", {opacity: 0, y: 100, duration: 1.2})
+tl.from(".fadeF", {opacity: 0, y: 100, duration: 1.4})
+
+
+
+
 //mixitup
 
 $(function () {
   $('.blog__inner').mixItUp({
-      selectors: {
-        target: '.latest__item',
-        filter: '.blog__btn',
-      }
+    selectors: {
+      target: '.latest__item',
+      filter: '.blog__btn',
     }
-  );
+  });
 });
