@@ -238,14 +238,47 @@ ScrollTrigger.create({
 
 let tl = gsap.timeline();
 
-tl.from(".fade", {opacity: 0, y: 100, duration: 0.7})
-tl.from(".fadeS", {opacity: 0, y: 100, duration: 1})
-tl.from(".fadeR", {opacity: 0, x: 100, duration: 1})
-tl.from(".fadeT", {opacity: 0, y: 100, duration: 1.2})
-tl.from(".fadeF", {opacity: 0, y: 100, duration: 1.4})
+tl.from(".fade", {
+  opacity: 0,
+  y: 100,
+  duration: 0.7
+})
+tl.from(".fadeS", {
+  opacity: 0,
+  y: 100,
+  duration: 1
+})
+tl.from(".fadeR", {
+  opacity: 0,
+  x: 100,
+  duration: 1
+})
+tl.from(".fadeT", {
+  opacity: 0,
+  y: 100,
+  duration: 1.2
+})
+tl.from(".fadeF", {
+  opacity: 0,
+  y: 100,
+  duration: 1.4
+})
 
 
+// btn on click
+$('.btn').click(function () {
+  $(this).css('background-color', '#E93D02');
+});
 
+$('.btn__reg').click(function () {
+  $(this).css('color', '#E93D02');
+  $(this).css('border', '1px solid #E93D02');
+});
+
+$('.btn__pag').click(function () {
+  $(this).css('color', '#FFFFFF');
+  $(this).css('background-color', '#FF5B22');
+});
 
 //mixitup
 

@@ -79,6 +79,11 @@
     border: 1px solid #000000;
     transform: rotate(90deg);
   }
+
+  .header__logo {
+    max-width: 201px;
+    max-height: 35px;
+  }
 }
 
 .footer__item-text {
@@ -166,15 +171,9 @@
 }
 
 .footer__bot-services {
-  height: 23%;
-  text-align: right;
+  display: flex;
 }
 
-.footer__bot-service {
-  span {
-    display: block;
-  }
-}
 
 .footer__bot-service + .footer__bot-service {
   margin-left: 50px;
