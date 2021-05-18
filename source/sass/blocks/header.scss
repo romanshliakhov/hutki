@@ -1,5 +1,12 @@
+.header {
+  position: relative;
+  z-index: 10;
+}
+
 .header__bg {
   background-color: #edf7ff;
+  position: relative;
+  z-index: 10;
 }
 
 .header__inner {
@@ -41,6 +48,9 @@
   }
 
   &:hover {
+    position: relative;
+    z-index: 50;
+
     .header__nav-link {
       color: #ff5b22;
     }
@@ -49,7 +59,7 @@
       overflow: auto;
       height: auto;
       padding-top: 5px;
-      z-index: 50px;
+      z-index: 50;
     }
 
     .header__nav-arrow {
