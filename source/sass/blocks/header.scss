@@ -49,14 +49,16 @@
       overflow: auto;
       height: auto;
       padding-top: 5px;
+      z-index: 50px;
     }
 
     .header__nav-arrow {
-      transition: linear 0.5s;
-      transform: rotate(-180deg);
+      transition: linear 0.3s;
+      transform: scaleY(-1);
 
       path {
-        fill: #ff5b22;
+        stroke: #ff5b22;
+        fill: transparent;
       }
     }
   }

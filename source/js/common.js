@@ -165,57 +165,62 @@ function fadeAnim() {
 
 // -----------------  Слайдер --------------------
 
-// const Sliders = {
-//   INDEX_SLIDER: {
-//     ELEMENT: $('.index-slider'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: false,
-//       dots: false,
-//       speed: 1500,
-//       slidesToShow: 1,
-//       infinite: false,
-//     },
-//     BREAKPOINT: 576,
-//     CLASSNAME: '.flex-container',
-//   },
-// }
+const Sliders = {
+  INDEX_SLIDER: {
+    ELEMENT: $('.publication__body'),
+    SETTINGS: {
+      accessibility: true,
+      arrows: false,
+      dots: false,
+      speed: 1500,
+      slidesToShow: 1,
+      slideToScroll: 1,
+      centerMode: true,
+      centerPadding: "0",
+      variableWidth: true,
+      infinite: true,
+      // adaptiveHeight: true,
+    },
+    BREAKPOINT: 576,
+    CLASSNAME: 'latest__body',
+  },
+}
 
-// function initialazeSlickSlider(slider) {
-//   const {
-//     BREAKPOINT,
-//     SETTINGS,
-//     ELEMENT
-//   } = slider;
-//   (document.documentElement.clientWidth <= BREAKPOINT || BREAKPOINT === undefined) && ELEMENT.slick(SETTINGS);
-// }
+function initialazeSlickSlider(slider) {
+  const {
+    BREAKPOINT,
+    SETTINGS,
+    ELEMENT
+  } = slider;
+  (document.documentElement.clientWidth <= BREAKPOINT || BREAKPOINT === undefined) && ELEMENT.slick(SETTINGS);
+}
 
-// function toggleSlider(slider) {
-//   const {
-//     BREAKPOINT,
-//     ELEMENT,
-//     SETTINGS
-//   } = slider;
-//   document.documentElement.clientWidth > BREAKPOINT && ELEMENT.hasClass('slick-initialized') && ELEMENT.slick('unslick');
-//   document.documentElement.clientWidth <= BREAKPOINT && !ELEMENT.hasClass('slick-initialized') && ELEMENT.slick(SETTINGS);
-// }
+function toggleSlider(slider) {
+  const {
+    BREAKPOINT,
+    ELEMENT,
+    SETTINGS
+  } = slider;
+  document.documentElement.clientWidth > BREAKPOINT && ELEMENT.hasClass('slick-initialized') && ELEMENT.slick('unslick');
+  document.documentElement.clientWidth <= BREAKPOINT && !ELEMENT.hasClass('slick-initialized') && ELEMENT.slick(SETTINGS);
+}
 
-// function toggleExtraClass(slider) {
-//   const {
-//     BREAKPOINT,
-//     ELEMENT,
-//     CLASSNAME
-//   } = slider;
-//   document.documentElement.clientWidth > BREAKPOINT && !ELEMENT.hasClass(CLASSNAME) && ELEMENT.addClass(CLASSNAME);
-//   document.documentElement.clientWidth <= BREAKPOINT && ELEMENT.hasClass(CLASSNAME) && ELEMENT.removeClass(CLASSNAME);
-// }
+function toggleExtraClass(slider) {
+  const {
+    BREAKPOINT,
+    ELEMENT,
+    CLASSNAME
+  } = slider;
+  document.documentElement.clientWidth > BREAKPOINT && !ELEMENT.hasClass(CLASSNAME) && ELEMENT.addClass(CLASSNAME);
+  document.documentElement.clientWidth <= BREAKPOINT && ELEMENT.hasClass(CLASSNAME) && ELEMENT.removeClass(CLASSNAME);
+}
 
-// initialazeSlickSlider(Sliders.INDEX_SLIDER);
+initialazeSlickSlider(Sliders.INDEX_SLIDER);
 
-// window.addEventListener('resize', () => {
-//   toggleSlider(Sliders.INFORM);
-//   toggleExtraClass(Sliders.INFORM);
-// });
+window.addEventListener('resize', () => {
+  toggleSlider(Sliders.INDEX_SLIDER);
+  toggleExtraClass(Sliders.INDEX_SLIDER);
+});
 
 
 // dinamic row
@@ -235,34 +240,6 @@ ScrollTrigger.create({
 
 
 // fade animatiuon
-
-// let tl = gsap.timeline();
-
-// tl.from(".fade", {
-//   opacity: 0,
-//   y: 100,
-//   duration: 0.7
-// })
-// tl.from(".fadeS", {
-//   opacity: 0,
-//   y: 100,
-//   duration: 1
-// })
-// tl.from(".fadeR", {
-//   opacity: 0,
-//   x: 100,
-//   duration: 1
-// })
-// tl.from(".fadeT", {
-//   opacity: 0,
-//   y: 100,
-//   duration: 1.2
-// })
-// tl.from(".fadeF", {
-//   opacity: 0,
-//   y: 100,
-//   duration: 1.4
-// })
 
 wow = new WOW(
   {
