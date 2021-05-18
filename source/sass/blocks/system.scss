@@ -10,12 +10,14 @@
 
 .system__right {
   max-width: 550px;
+  animation-delay: 2s;
 }
 
 .system__title {
   font-weight: 500;
   font-size: 70px;
   line-height: 70px;
+  animation-delay: 1s;
 }
 
 .system__subtitle {
@@ -23,10 +25,12 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 29px;
+  animation-delay: 1.5s;
 }
 
 .system__btns {
   margin-top: 52px;
+  animation-delay: 2.5s;
 }
 
 .system__btn {
@@ -77,6 +81,7 @@
   text-align: center;
   border-top: 2px solid #ff5b22;
   border-right: 1px solid #000000;
+  animation-delay: 2.7s;
 
   &:last-child {
     border-top: 1px solid #000000;

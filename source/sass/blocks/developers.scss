@@ -10,6 +10,7 @@
   margin-bottom: 80px;
   line-height: 30px;
   color: #282828;
+  animation-delay: 1.5s;
 
   a {
     text-decoration-line: underline;
@@ -20,6 +21,13 @@
 .developers__api,
 .developers__cms {
   border-top: 1px solid #000000;
+  animation-delay: 2s;
+}
+
+.developers__modules {
+  margin-top: 34px;
+  display: flex;
+  animation-delay: 1s;
 }
 
 .developers__api-title {
@@ -34,6 +42,7 @@
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
+  animation-delay: 1s;
 }
 
 .developers__cms-title {
@@ -41,12 +50,14 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 500;
+  animation-delay: 1.5s;
 }
 
 .developers__cms-subtitle {
   max-width: 660px;
   font-size: 22px;
   line-height: 28px;
+  animation-delay: 1.5s;
 }
 
 .developers__cms-ps {
@@ -54,17 +65,14 @@
   font-size: 16px;
   line-height: 20px;
   color: #ff5b22;
-}
-
-.developers__modules {
-  margin-top: 34px;
-  display: flex;
+  animation-delay: 2s;
 }
 
 .developers__module {
   max-width: 660px;
   width: 100%;
   border-right: 1px solid #cbd7df;
+  animation-delay: 1.5s;
 
   &:last-child {
     border-right: 0;

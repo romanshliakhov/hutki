@@ -12,16 +12,22 @@
 .latest__prev {
   font-size: 22px;
   line-height: 29px;
+  animation-delay: 1.3s;
 }
 
 .latest__all {
   line-height: 25px;
   font-weight: 300;
+  animation-delay: 1.3s;
 }
 
 .latest__body {
   display: flex;
   justify-content: space-around;
+}
+
+.latest__item {
+  animation-delay: 1s;
 }
 
 .latest__item-wrapper {

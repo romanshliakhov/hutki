@@ -4,6 +4,10 @@
   justify-content: space-between;
 }
 
+.create__left {
+  animation-delay: 1s;
+}
+
 .create__right {
   max-width: 880px;
   width: 100%;
@@ -13,6 +17,7 @@
   line-height: 30px;
   color: #282828;
   max-width: 400px;
+  animation-delay: 1s;
 }
 
 .create__text-bold {
@@ -20,4 +25,5 @@
   font-size: 36px;
   line-height: 45px;
   font-weight: 500;
+  animation-delay: 2s;
 }

@@ -236,33 +236,44 @@ ScrollTrigger.create({
 
 // fade animatiuon
 
-let tl = gsap.timeline();
+// let tl = gsap.timeline();
 
-tl.from(".fade", {
-  opacity: 0,
-  y: 100,
-  duration: 0.7
-})
-tl.from(".fadeS", {
-  opacity: 0,
-  y: 100,
-  duration: 1
-})
-tl.from(".fadeR", {
-  opacity: 0,
-  x: 100,
-  duration: 1
-})
-tl.from(".fadeT", {
-  opacity: 0,
-  y: 100,
-  duration: 1.2
-})
-tl.from(".fadeF", {
-  opacity: 0,
-  y: 100,
-  duration: 1.4
-})
+// tl.from(".fade", {
+//   opacity: 0,
+//   y: 100,
+//   duration: 0.7
+// })
+// tl.from(".fadeS", {
+//   opacity: 0,
+//   y: 100,
+//   duration: 1
+// })
+// tl.from(".fadeR", {
+//   opacity: 0,
+//   x: 100,
+//   duration: 1
+// })
+// tl.from(".fadeT", {
+//   opacity: 0,
+//   y: 100,
+//   duration: 1.2
+// })
+// tl.from(".fadeF", {
+//   opacity: 0,
+//   y: 100,
+//   duration: 1.4
+// })
+
+wow = new WOW(
+  {
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       true,       // default
+  live:         true        // default
+  }
+  )
+  wow.init();
 
 
 // btn on click

@@ -4,6 +4,7 @@
   margin-bottom: 134px;
   max-width: 736px;
   position: relative;
+  animation-delay: 0.7s;
 
   &::before {
     content: "";
@@ -33,6 +34,7 @@
   text-align: center;
   position: relative;
   z-index: 2;
+  animation-delay: 0.7s;
 
 
   &::before {
@@ -59,12 +61,14 @@
 .error__type {
   font-size: 250px;
   line-height: 250px;
+  animation-delay: 1s;
 }
 
 .error__descr {
   font-size: 36px;
   line-height: 45px;
   font-weight: 500;
+  animation-delay: 1.3s;
 }
 
 .error__text {
@@ -73,6 +77,7 @@
   color: #5b5e67;
   margin-top: 16px;
   min-width: 584px;
+  animation-delay: 1.5s;
 }
 
 .error__text-medium {
@@ -88,6 +93,7 @@
   color: #ffffff;
   background-color: #ff5b22;
   transition: all 0.3s ease;
+  animation-delay: 2s;
 
   &:hover {
     background-color: #e93d02;
