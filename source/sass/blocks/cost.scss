@@ -10,20 +10,17 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 500;
-  animation-delay: 0.4s;
 }
 
 .cost__subtitle {
   font-size: 22px;
   line-height: 28px;
   max-width: 660px;
-  animation-delay: 0.4s;
 }
 
 .cost__info {
   margin-top: 70px;
   display: flex;
-  animation-delay: 0.5s;
 }
 
 .cost__item {
@@ -52,6 +49,7 @@
     left: 58%;
     font-size: 30px;
     line-height: 45px;
+    font-weight: 400;
     color: #cbd7df;
   }
 }
@@ -69,6 +67,7 @@
     left: 55%;
     font-size: 30px;
     line-height: 45px;
+    font-weight: 400;
     color: #cbd7df;
   }
 }

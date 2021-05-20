@@ -14,11 +14,6 @@
   border-top: 1px solid #000000;
   display: flex;
   margin-bottom: 64px;
-  animation-delay: 0.5s;
-
-  &:first-child {
-    animation-delay: 0.3s;
-  }
 }
 
 .advantage__item {
@@ -30,11 +25,10 @@
   &::before {
     content: "";
     position: absolute;
-    right: -20%;
-    top: 48%;
-    width: 130px;
-    border: 1px solid #000000;
-    transform: rotate(90deg);
+    top: 0;
+    right: 0;
+    height: 130px;
+    border-right: 1px solid #000000;
   }
 
   &:last-child {

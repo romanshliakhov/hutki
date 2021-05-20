@@ -2,7 +2,7 @@
 $(".hamburger").click(function (event) {
   $(".hamburger").toggleClass('hamburger__active'),
     $(".mobile__menu ").toggleClass('mobile__menu__active');
-      $('body').css('overflow-y' , 'hidden');
+    $('body').css('overflow-y' , 'hidden');
 });
 
 // переменная не переназначается, поэтому используем const
@@ -230,7 +230,7 @@ window.addEventListener('resize', () => {
 ScrollTrigger.create({
   trigger: ".animate__sec-inner",
   start: "10px bottom",
-  end: "top top",
+  end: "bootom top",
   onUpdate: self => {
     // console.log("velocity:", self);
     gsap.to('.animate__sec-inner', {
@@ -238,20 +238,6 @@ ScrollTrigger.create({
     })
   }
 });
-
-
-// fade animatiuon
-
-wow = new WOW(
-  {
-  boxClass:     'wow',      // default
-  animateClass: 'animated', // default
-  offset:       0,          // default
-  mobile:       true,       // default
-  live:         true        // default
-  }
-  )
-  wow.init();
 
 
 // btn on click
