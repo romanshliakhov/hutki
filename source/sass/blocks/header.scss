@@ -54,11 +54,11 @@
       color: #ff5b22;
     }
 
-    .menu {
+    .menu__hover {
       overflow: auto;
       height: auto;
-      padding-top: 5px;
-      z-index: 50;
+      top: 65px;
+      z-index: 10;
     }
 
     .header__nav-arrow {
