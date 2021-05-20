@@ -12,13 +12,13 @@
 .latest__prev {
   font-size: 22px;
   line-height: 29px;
-  animation-delay: 1.3s;
+  animation-delay: 0.4s;
 }
 
 .latest__all {
   line-height: 25px;
   font-weight: 300;
-  animation-delay: 1.3s;
+  animation-delay: 0.5s;
 }
 
 .latest__body {
@@ -27,7 +27,7 @@
 }
 
 .latest__item {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .latest__item-wrapper {
@@ -66,6 +66,14 @@
   font-size: 26px;
   line-height: 31px;
   font-weight: 500;
+
+  span {
+    display: block;
+  }
+}
+
+.latest__title-mob {
+  display: none;
 }
 
 .latest__descr {

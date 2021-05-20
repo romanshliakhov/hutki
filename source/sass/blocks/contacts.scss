@@ -14,7 +14,7 @@
 
 .contacts__left {
   max-width: 400px;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 
 .contacts__right {
@@ -29,20 +29,20 @@
   max-width: 400px;
   line-height: 30px;
   color: #282828;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
 
 .contacts__form {
   margin-top: 82px;
   margin-bottom: 90px;
-  animation-delay: 2s;
+  animation-delay: 0.6s;
 }
 
 .contacts__list {
   margin-top: 31px;
   display: flex;
   justify-content: space-between;
-  animation-delay: 1.3s;
+  animation-delay: 0.5s;
 }
 
 .contacts__list-items {
@@ -65,7 +65,7 @@
 
 .contacts__map {
   max-height: 290px;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .contacts__about {
@@ -79,7 +79,7 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 500;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .contacts__descr,
@@ -87,7 +87,7 @@
   font-size: 36px;
   line-height: 45px;
   font-weight: 500;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .contacts__descr-orange {
@@ -98,5 +98,5 @@
   margin-top: 68px;
   display: flex;
   justify-content: space-between;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }

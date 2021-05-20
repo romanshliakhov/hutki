@@ -4,7 +4,7 @@
 
 .pricing__top {
   padding-bottom: 79px;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .pricing__head {
@@ -17,14 +17,14 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 500;
-  animation-delay: 1.2s;
+  animation-delay: 0.4s;
 }
 
 .pricing__subheader {
   max-width: 612px;
   font-size: 22px;
   line-height: 29px;
-  animation-delay: 1.2s;
+  animation-delay: 0.4s;
 }
 
 .pricing__mid {
@@ -42,7 +42,7 @@
   max-width: 660px;
   width: 100%;
   border-right: 1px solid #000000;
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 
   &:last-child {
     border-right: none;
@@ -59,7 +59,7 @@
   .pricing__btn {
     margin: 0;
     margin-top: 41px;
-    animation-delay: 0.7s;
+    animation-delay: 0.3s;
   }
 }
 
@@ -174,7 +174,7 @@
   border-bottom: 1px solid #000000;
   max-width: 100%;
   position: relative;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 
   &::before {
     content: "";
@@ -203,7 +203,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .pricing__note-number {
@@ -231,6 +231,7 @@
   border-radius: 4px;
   color: #ffffff;
   transition: all 0.3s ease;
+  animation-delay: 0.3s;
 
   &:hover {
     background-color: #e93d02;

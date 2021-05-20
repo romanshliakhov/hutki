@@ -11,7 +11,7 @@
   line-height: 25px;
   font-weight: 300;
   color: #ff5b22;
-  animation-delay: 1.3s;
+  animation-delay: 0.5s;
 }
 
 .publication__image {
@@ -19,7 +19,7 @@
   width: 100%;
   max-height: 480px;
   margin: 0 auto;
-  animation-delay: 1.5s;
+  animation-delay: 0.6s;
 }
 
 .publication__blocks {
@@ -30,14 +30,14 @@
 
 .publication__block-top {
   margin-bottom: 90px;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .publication__paragraph {
   font-size: 20px;
   line-height: 30px;
   color: #282828;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 
   a {
     text-decoration-line: underline;
@@ -65,7 +65,7 @@
 .publication__block-mid {
   margin-bottom: 93px;
   border-top: 1px solid #000000;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .publication__h2 {
@@ -74,7 +74,7 @@
   font-weight: 500;
   margin-top: 16px;
   margin-bottom: 31px;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .publication__h3 {
@@ -83,7 +83,7 @@
   font-weight: 500;
   margin-top: 16px;
   margin-bottom: 80px;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .publication__h4 {
@@ -91,18 +91,18 @@
   font-weight: 500;
   color: #282828;
   margin: 38px 0 31px;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .publication__block-bot {
   border-top: 1px solid #000000;
   margin-bottom: 85px;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 
   .publication__h3 {
     margin-top: 9px;
     margin-bottom: 86px;
-    animation-delay: 1s;
+    animation-delay: 0.4s;
   }
 }
 
@@ -111,7 +111,7 @@
   line-height: 28px;
   margin-top: 80px;
   color: #282828;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 
   a {
     text-decoration-line: underline;
@@ -126,7 +126,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  animation-delay: 1.3s;
+  animation-delay: 0.5s;
 }
 
 .publication__socials {
@@ -181,7 +181,7 @@
 
 .publication__tables {
   margin-bottom: 43px;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 
 .publication__tables-titles {
@@ -245,5 +245,5 @@
 }
 
 .publication__body {
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
 }
