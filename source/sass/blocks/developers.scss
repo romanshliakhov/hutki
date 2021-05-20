@@ -4,14 +4,12 @@
 
 .developers__top {
   padding-bottom: 79px;
-  animation-delay: 0.4s;
 }
 
 .developers__text {
   margin-bottom: 80px;
   line-height: 30px;
   color: #282828;
-  animation-delay: 0.5s;
 
   a {
     text-decoration-line: underline;
@@ -22,13 +20,11 @@
 .developers__api,
 .developers__cms {
   border-top: 1px solid #000000;
-  animation-delay: 0.5s;
 }
 
 .developers__modules {
   margin-top: 34px;
   display: flex;
-  animation-delay: 0.6s;
 }
 
 .developers__api-title {
@@ -43,7 +39,6 @@
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
-  animation-delay: 0.5s;
 }
 
 .developers__cms-title {
@@ -51,14 +46,12 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 500;
-  animation-delay: 0.4s;
 }
 
 .developers__cms-subtitle {
   max-width: 660px;
   font-size: 22px;
   line-height: 28px;
-  animation-delay: 0.4s;
 }
 
 .developers__cms-ps {
@@ -66,20 +59,18 @@
   font-size: 16px;
   line-height: 20px;
   color: #ff5b22;
-  animation-delay: 0.6s;
 }
 
 .developers__module {
   max-width: 660px;
   width: 100%;
   border-right: 1px solid #cbd7df;
-  animation-delay: 0.5s;
 
   &:last-child {
     border-right: 0;
 
-    a {
-      margin-left: 40px;
+    .developers__module-image {
+      margin-left: 24px;
     }
   }
 }
@@ -89,7 +80,7 @@
   border-bottom: 1px solid #cbd7df;
   display: flex;
   align-items: center;
-  height: 34px;
+  height: 36px;
   cursor: pointer;
   transition: all 0.4s;
 
@@ -118,8 +109,8 @@
 }
 
 .developers__module-image {
-  margin-right: 44px;
-  height: 20px;
+  margin-right: 32px;
+  max-height: 33px;
   max-width: 103px;
   width: 100%;
 }
