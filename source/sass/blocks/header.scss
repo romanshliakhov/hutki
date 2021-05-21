@@ -49,6 +49,7 @@
   &:hover {
     position: relative;
     z-index: 20;
+    height: 90px;
 
     .header__nav-link {
       color: #ff5b22;
@@ -59,6 +60,7 @@
       height: auto;
       top: 65px;
       z-index: 10;
+      opacity: 1;
     }
 
     .header__nav-arrow {

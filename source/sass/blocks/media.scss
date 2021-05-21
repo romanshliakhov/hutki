@@ -783,16 +783,15 @@
   .mobile__menu {
     position: fixed;
     top: 80px;
-    max-width: 375px;
+    max-width: 100%;
     width: 100%;
-    left: -150%;
+    left: 0;
     height: 100%;
     z-index: 5;
     overflow-y: scroll;
     background: #ffffff;
-    padding: 0 16px 16px;
     align-items: center;
-    transition: 0.5s;
+    opacity: 0;
 
     .mobile__nav-list {
       flex-direction: column;
@@ -805,7 +804,6 @@
       padding: 19px 0 15px;
       font-size: 18px;
       line-height: 25px;
-      max-width: 335px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -822,7 +820,6 @@
       flex-direction: column-reverse;
 
       button {
-        max-width: 335px;
         width: 100%;
       }
     }
@@ -855,7 +852,7 @@
       padding-left: 40px;
 
       .menu__list {
-        max-width: 295px;
+        max-width: 100%;
         padding: 10px 0 4px;
         border-bottom: 1px solid #d9e1ee;
 
@@ -866,7 +863,7 @@
       }
 
       .menu__list-link {
-        max-width: 250px;
+        max-width: 100%;
         font-size: 18px;
         line-height: 25px;
         color: #585858;
@@ -879,9 +876,9 @@
   }
 
   .mobile__menu__active {
-    left: 0;
-    transition: 0.5s;
-    padding-bottom: 100px;
+    padding: 0 20px 100px;
+    opacity: 1;
+    border-top: 1px solid #d9e1ee;
   }
 
   .mobile__menu-box {
@@ -1143,10 +1140,6 @@
 
   .trust__list-item {
     margin-bottom: 16px;
-
-    // & + & {
-    //   margin-left: 50px;
-    // }
   }
 
   .advantage__inner {
@@ -1988,7 +1981,6 @@
   }
 
   // mobile menu
-  // mobile menu
   .hamburger__wrapp {
     top: 40px;
     width: 45px;
@@ -2023,16 +2015,15 @@
   .mobile__menu {
     position: fixed;
     top: 80px;
-    max-width: 375px;
+    max-width: 100%;
     width: 100%;
-    left: -150%;
+    left: 0;
     height: 100%;
     z-index: 5;
     overflow-y: scroll;
     background: #ffffff;
-    padding: 0 16px 16px;
     align-items: center;
-    transition: 0.5s;
+    opacity: 0;
 
     .mobile__nav-list {
       flex-direction: column;
@@ -2045,7 +2036,6 @@
       padding: 19px 0 15px;
       font-size: 18px;
       line-height: 25px;
-      max-width: 335px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -2062,7 +2052,6 @@
       flex-direction: column-reverse;
 
       button {
-        max-width: 335px;
         width: 100%;
       }
     }
@@ -2095,7 +2084,7 @@
       padding-left: 40px;
 
       .menu__list {
-        max-width: 295px;
+        max-width: 100%;
         padding: 10px 0 4px;
         border-bottom: 1px solid #d9e1ee;
 
@@ -2106,7 +2095,7 @@
       }
 
       .menu__list-link {
-        max-width: 250px;
+        max-width: 100%;
         font-size: 18px;
         line-height: 25px;
         color: #585858;
@@ -2119,9 +2108,9 @@
   }
 
   .mobile__menu__active {
-    left: 0;
-    transition: 0.5s;
-    padding-bottom: 100px;
+    padding: 0 20px 100px;
+    opacity: 1;
+    border-top: 1px solid #d9e1ee;
   }
 
   .mobile__menu-box {
@@ -3434,16 +3423,15 @@
   .mobile__menu {
     position: fixed;
     top: 80px;
-    max-width: 375px;
+    max-width: 100%;
     width: 100%;
-    left: -150%;
+    left: 0;
     height: 100%;
     z-index: 5;
     overflow-y: scroll;
     background: #ffffff;
-    padding: 0 16px 16px;
     align-items: center;
-    transition: 0.5s;
+    opacity: 0;
 
     .mobile__nav-list {
       flex-direction: column;
@@ -3456,7 +3444,6 @@
       padding: 19px 0 15px;
       font-size: 18px;
       line-height: 25px;
-      max-width: 335px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -3473,7 +3460,6 @@
       flex-direction: column-reverse;
 
       button {
-        max-width: 335px;
         width: 100%;
       }
     }
@@ -3506,7 +3492,7 @@
       padding-left: 40px;
 
       .menu__list {
-        max-width: 295px;
+        max-width: 100%;
         padding: 10px 0 4px;
         border-bottom: 1px solid #d9e1ee;
 
@@ -3517,7 +3503,7 @@
       }
 
       .menu__list-link {
-        max-width: 250px;
+        max-width: 100%;
         font-size: 18px;
         line-height: 25px;
         color: #585858;
@@ -3530,9 +3516,9 @@
   }
 
   .mobile__menu__active {
-    left: 0;
-    transition: 0.5s;
-    padding-bottom: 100px;
+    padding: 0 20px 100px;
+    opacity: 1;
+    border-top: 1px solid #d9e1ee;
   }
 
   .mobile__menu-box {

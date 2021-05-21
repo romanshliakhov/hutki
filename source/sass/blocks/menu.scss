@@ -4,23 +4,42 @@
   position: fixed;
   z-index: 10;
   overflow: hidden;
-  top: 0;
   left: 0;
-  background-color: red;
+  background-color: #ffffff;
+  opacity: 0;
 }
 
 .menu {
-  position: static;
-  min-width: 252px;
+  position: relative;
+  max-width: 395px;
   width: 100%;
-  background-color: #ffffff;
-  height: 425px;
-  z-index: 10;
-  transition: all 0.3s ease-in-out;
+  height: 100%;
+  transition: all .3s ease-in-out;
+  padding-bottom: 50px;
 }
 
 .menu__blue {
   background-color: #edf7ff;
+}
+
+.menu__erip {
+  left: 26%;
+  padding-left: 15px;
+}
+
+.menu__epos {
+  left: 31%;
+  padding-left: 11px;
+}
+
+.menu__services {
+  left: 36%;
+  padding-left: 11px;
+}
+
+.menu__contacts {
+  left: 41%;
+  padding-left: 16px;
 }
 
 .menu__list {
