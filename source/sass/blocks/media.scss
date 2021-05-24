@@ -786,7 +786,6 @@
     max-width: 100%;
     width: 100%;
     left: 0;
-    height: 100%;
     z-index: 5;
     overflow-y: scroll;
     background: #ffffff;
@@ -879,6 +878,7 @@
     padding: 0 20px 100px;
     opacity: 1;
     border-top: 1px solid #d9e1ee;
+    height: 100%;
   }
 
   .mobile__menu-box {
@@ -988,13 +988,17 @@
       margin-bottom: 13px;
     }
 
+    &::before {
+      height: 89px;
+    }
+
     & + & {
       margin-top: 43px;
     }
 
     &:last-child {
       &::before {
-        border: 1px solid #000000;
+        border-left: 1px solid #000000;
       }
     }
   }
@@ -1025,11 +1029,10 @@
     &::before {
       content: "";
       position: absolute;
-      right: -35px;
-      top: 35px;
-      width: 72px;
-      border: 1px solid #000000;
-      transform: rotate(90deg);
+      right: 0;
+      top: 0;
+      height: 73px;
+      border-left: 1px solid #000000;
     }
   }
 
@@ -2018,7 +2021,6 @@
     max-width: 100%;
     width: 100%;
     left: 0;
-    height: 100%;
     z-index: 5;
     overflow-y: scroll;
     background: #ffffff;
@@ -2111,6 +2113,7 @@
     padding: 0 20px 100px;
     opacity: 1;
     border-top: 1px solid #d9e1ee;
+    height: 100%;
   }
 
   .mobile__menu-box {
@@ -2239,9 +2242,13 @@
       margin-top: 43px;
     }
 
+    &::before {
+      height: 89px;
+    }
+
     &:last-child {
       &::before {
-        border: 1px solid #000000;
+        border-left: 1px solid #000000;
       }
     }
   }
@@ -2272,11 +2279,10 @@
     &::before {
       content: "";
       position: absolute;
-      right: -35px;
-      top: 35px;
-      width: 72px;
-      border: 1px solid #000000;
-      transform: rotate(90deg);
+      right: 0;
+      top: 0;
+      height: 73px;
+      border-left: 1px solid #000000;
     }
   }
 
@@ -3426,7 +3432,6 @@
     max-width: 100%;
     width: 100%;
     left: 0;
-    height: 100%;
     z-index: 5;
     overflow-y: scroll;
     background: #ffffff;
@@ -3519,6 +3524,7 @@
     padding: 0 20px 100px;
     opacity: 1;
     border-top: 1px solid #d9e1ee;
+    height: 100%;
   }
 
   .mobile__menu-box {

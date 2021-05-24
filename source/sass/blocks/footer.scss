@@ -73,11 +73,10 @@
   &::before {
     content: "";
     position: absolute;
-    right: -40px;
-    top: 39px;
-    width: 80px;
-    border: 1px solid #000000;
-    transform: rotate(90deg);
+    right: 0;
+    top: 0;
+    height: 80px;
+    border-right: 1px solid #000000;
   }
 
   .header__logo {
