@@ -26,6 +26,16 @@
 
 .latest__item-wrapper {
   max-width: 400px;
+
+  &:hover {
+    .latest__title {
+      color: #ff5b22;
+    }
+
+    .latest__descr {
+      color: #ff5b22;
+    }
+  }
 }
 
 .latest__item-image {
@@ -38,16 +48,6 @@
   max-width: 361px;
   cursor: pointer;
   transition: all 0.3s ease;
-
-  &:hover {
-    .latest__title {
-      color: #ff5b22;
-    }
-
-    .latest__descr {
-      color: #ff5b22;
-    }
-  }
 }
 
 .latest__pubtime {

@@ -10,6 +10,9 @@
 
 .system__right {
   max-width: 550px;
+  min-height: 568px;
+  display: flex;
+  align-items: center;
 }
 
 .system__title {
@@ -64,7 +67,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
 }
 
 .system__bot-item {
@@ -72,6 +74,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
   width: 100%;
   max-width: 660px;
   text-align: center;

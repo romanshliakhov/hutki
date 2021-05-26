@@ -2,7 +2,7 @@
 $(".hamburger").click(function (event) {
   $(".hamburger").toggleClass('hamburger__active'),
     $(".mobile__menu ").toggleClass('mobile__menu__active');
-      $('body').toggleClass('body__scroll');
+  $('body').toggleClass('body__scroll');
 });
 
 // переменная не переназначается, поэтому используем const
@@ -120,14 +120,12 @@ ScrollTrigger.create({
   trigger: ".animate__sec-inner",
   start: "center bottom",
   end: "center top",
-  onUpdate: self => {
-    // console.log("velocity:", self);
-    gsap.to('.animate__sec-inner', {
-      xPercent: -self.progress * 150
+  onUpdate: e => {
+    gsap.to(".animate__sec-inner", {
+      xPercent: 100 * -e.progress
     })
   }
 });
-
 
 // btn on click
 $('.btn').click(function () {
@@ -146,11 +144,44 @@ $('.btn__pag').click(function () {
 
 //mixitup
 
+// $(function () {
+//   $('.blog__inner').mixItUp({
+//     selectors: {
+//       target: '.latest__item',
+//       filter: '.blog__btn',
+//     }
+//   });
+// });
+
+// owl
 $(function () {
-  $('.blog__inner').mixItUp({
-    selectors: {
-      target: '.latest__item',
-      filter: '.blog__btn',
-    }
-  });
+  function e() {
+    $(".slide-progress").css({
+      width: "100%",
+      transition: "width 5000ms"
+    })
+  }
+
+  function t() {
+    $(".slide-progress").css({
+      width: 0,
+      transition: "width 0s"
+    })
+  }
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: !0,
+    dotsContainer: ".system__bot",
+    dots: !0,
+    autoplay: !0,
+    onInitialized: e,
+    onTranslate: t,
+    onTranslated: e
+  })
 });
+
+// menu overlay
+$('.header__nav-list').hover(function () {
+	$('.overlay').toggleClass('overlay--display')
+});
+
