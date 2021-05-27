@@ -3540,6 +3540,16 @@
     opacity: 1;
     border-top: 1px solid #d9e1ee;
     height: 100%;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background-color: red;
+    //   top: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: -1;
+    // }
   }
 
   .mobile__menu-box {

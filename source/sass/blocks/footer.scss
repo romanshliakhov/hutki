@@ -173,7 +173,12 @@
   display: flex;
 }
 
-
 .footer__bot-service + .footer__bot-service {
   margin-left: 50px;
+}
+
+.footer__phone:hover,
+.footer__mail:hover,
+.footer__bot-service:hover {
+  color: #ff5b22;
 }

@@ -41,7 +41,6 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease-in-out;
 
   & + & {
     margin-left: 35px;
@@ -65,7 +64,6 @@
     }
 
     .header__nav-arrow {
-      transition: linear 0.3s;
       transform: scaleY(-1);
 
       path {
@@ -78,6 +76,7 @@
 
 .header__nav-arrow {
   margin-left: 5px;
+  stroke-width: 2px;
 }
 
 .header__btns {

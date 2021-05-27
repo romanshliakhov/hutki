@@ -45,6 +45,12 @@
   max-width: 260px;
   width: 100%;
   border-top: 1px solid #000000;
+
+  &:last-child {
+    .contacts__list-item:hover {
+      color: initial;
+    }
+  }
 }
 
 .contacts__list-title {
@@ -57,6 +63,10 @@
   max-width: 195px;
   font-size: 20px;
   line-height: 24px;
+
+  &:hover {
+    color: #ff5b22;
+  }
 }
 
 .contacts__map {

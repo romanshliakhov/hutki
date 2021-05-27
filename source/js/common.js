@@ -116,17 +116,6 @@ window.addEventListener('resize', () => {
 
 
 // dinamic row
-// ScrollTrigger.create({
-//   trigger: ".animate__sec-inner",
-//   start: "center bottom",
-//   end: "center top",
-//   onUpdate: e => {
-//     gsap.to(".animate__sec-inner", {
-//       xPercent: 40 * -e.progress
-//     })
-//   }
-// });
-
 $(function(){
   if ($(window).width() < 769 ) {
     ScrollTrigger.create({
@@ -135,7 +124,7 @@ $(function(){
       end: "center top",
       onUpdate: e => {
         gsap.to(".animate__sec-inner", {
-          xPercent: 300 * -e.progress
+          xPercent: 250 * -e.progress
         })
       }
     });
@@ -148,15 +137,12 @@ $(function(){
       end: "center top",
       onUpdate: e => {
         gsap.to(".animate__sec-inner", {
-          xPercent: 100 * -e.progress
+          xPercent: 70 * -e.progress
         })
       }
     });
   }
 });
-
-
-
 
 // btn on click
 $('.btn').click(function () {
@@ -212,7 +198,7 @@ $(function () {
 });
 
 // menu overlay
-$('.header__nav-list').hover(function () {
+$('.header__nav-link').hover(function () {
 	$('.overlay').toggleClass('overlay--display')
 });
 
