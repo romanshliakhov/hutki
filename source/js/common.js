@@ -2,7 +2,7 @@
 $(".hamburger").click(function (event) {
   $(".hamburger").toggleClass('hamburger__active'),
     $(".mobile__menu ").toggleClass('mobile__menu__active');
-  $('body').toggleClass('body__scroll');
+      $('body').toggleClass('body__scroll');
 });
 
 // переменная не переназначается, поэтому используем const
