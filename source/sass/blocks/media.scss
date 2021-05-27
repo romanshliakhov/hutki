@@ -3493,11 +3493,8 @@
   }
 
   .mobile__nav-item--active {
-    transition: linear 0.5s;
-
     svg {
-      transition: linear 0.3s;
-      transform: scaleY(-1);
+      transform: scaleY(-1) translateY(-50%);
 
       path {
         stroke: #ff5b22;
@@ -3539,7 +3536,7 @@
     opacity: 1;
     border-top: 1px solid #d9e1ee;
     height: 100%;
-    border-top: 80px solid transparent;
+    border-top: 80px solid #ffffff;
   }
 
   .mobile__menu-box {
