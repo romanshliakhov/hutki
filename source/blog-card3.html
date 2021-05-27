@@ -29,16 +29,22 @@
 
   <body class="body-index">
     <div class="wrapper">
-      <header class="header__bg">
-        <div class="container">
-          <div class="mobile__menu-box">
+      <div class="mobile__menu-box">
+        <div class="mobile__menu">
+          <div class="mobile__logo">
+            <a class="header__logo" href="">
+              <img class="header__img" src="img/logo.png" alt="" />
+            </a>
             <div class="hamburger__wrapp">
               <div class="hamburger">
                 <span></span>
                 <span></span>
               </div>
             </div>
-            <div class="mobile__menu">
+          </div>
+
+          <div class="mobile__nav">
+            <div class="container">
               <ul class="mobile__nav-list">
                 <li class="mobile__nav-item">
                   <div class="mobile__accordeon-header">
@@ -144,7 +150,6 @@
                       <path d="M11.4645 1L6.23225 6.23225L1 1" stroke="black" />
                     </svg>
                   </div>
-
                   <ul class="mobile__accordeon-body">
                     <li class="menu__list">
                       <a class="menu__list-link" href="#">IT разработка</a>
@@ -207,20 +212,34 @@
                   </ul>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div class="mobile__btns">
+            <div class="container">
               <div class="header__btns">
-                <button class="header__reg">Регистрация</button>
-                <button class="header__propose">Получить предложение</button>
+                <button class="header__reg btn__reg" type="button">
+                  Регистрация
+                </button>
+                <button class="header__propose btn" type="button">
+                  Получить предложение
+                </button>
               </div>
             </div>
           </div>
-          <div class="header__inner">
+        </div>
+      </div>
+
+      <header class="header__bg">
+        <div class="container">
+          <div class="header__inner ">
             <a class="header__logo" href="">
               <img class="header__img" src="img/logo.png" alt="" />
             </a>
 
             <nav class="header__nav">
               <ul class="header__nav-list">
-                <li class="header__nav-item">
+                <li class="header__nav-item ">
                   <a class="header__nav-link" href="#">ЕРИП</a>
                   <svg
                     class="header__nav-arrow"
@@ -250,14 +269,10 @@
                         <a class="menu__list-link" href="#">Если нет сайта</a>
                       </li>
                       <li class="menu__list">
-                        <a class="menu__list-link" href="#"
-                          >Партнеры и скидки</a
-                        >
+                        <a class="menu__list-link" href="#">Партнеры и скидки</a>
                       </li>
                       <li class="menu__list">
-                        <a class="menu__list-link" href="#"
-                          >Готовая интеграция</a
-                        >
+                        <a class="menu__list-link" href="#">Готовая интеграция</a>
                       </li>
                       <li class="menu__list">
                         <a class="menu__list-link" href="#">Для разработчика</a>
@@ -273,7 +288,7 @@
                           >Правила оплаты счетов</a
                         >
                       </li>
-                      <li class="menu__list">
+                      <li class="menu__list ">
                         <a class="menu__list-link" href="#"
                           >Требования ЕРИП к интернет-магазинам</a
                         >
@@ -281,7 +296,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item ">
                   <a class="header__nav-link" href="#">E-POS</a>
                   <svg
                     class="header__nav-arrow"
@@ -305,14 +320,12 @@
                         <a class="menu__list-link" href="#">Физическим лицам</a>
                       </li>
                       <li class="menu__list">
-                        <a class="menu__list-link" href="#"
-                          >Юридическим лицам</a
-                        >
+                        <a class="menu__list-link" href="#">Юридическим лицам</a>
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item ">
                   <a class="header__nav-link" href="#">Услуги</a>
                   <svg
                     class="header__nav-arrow"
@@ -348,7 +361,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item ">
                   <a class="header__nav-link" href="#">Контакты</a>
                   <svg
                     class="header__nav-arrow"
@@ -392,6 +405,13 @@
             <div class="header__btns">
               <button class="header__reg">Регистрация</button>
               <button class="header__propose">Получить предложение</button>
+            </div>
+
+            <div class="hamburger__wrapp">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
