@@ -54,7 +54,7 @@
 
 .faq__item--active {
   .faq__item-arrow {
-    transform: scaleY(-1);
+    transform: scaleY(-1) translateY(-50%);
   }
 
   .faq__item-answer {

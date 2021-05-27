@@ -116,16 +116,47 @@ window.addEventListener('resize', () => {
 
 
 // dinamic row
-ScrollTrigger.create({
-  trigger: ".animate__sec-inner",
-  start: "center bottom",
-  end: "center top",
-  onUpdate: e => {
-    gsap.to(".animate__sec-inner", {
-      xPercent: 100 * -e.progress
-    })
+// ScrollTrigger.create({
+//   trigger: ".animate__sec-inner",
+//   start: "center bottom",
+//   end: "center top",
+//   onUpdate: e => {
+//     gsap.to(".animate__sec-inner", {
+//       xPercent: 40 * -e.progress
+//     })
+//   }
+// });
+
+$(function(){
+  if ($(window).width() < 769 ) {
+    ScrollTrigger.create({
+      trigger: ".animate__sec-inner",
+      start: "center bottom",
+      end: "center top",
+      onUpdate: e => {
+        gsap.to(".animate__sec-inner", {
+          xPercent: 300 * -e.progress
+        })
+      }
+    });
+  }
+
+  if ($(window).width() > 769 ) {
+    ScrollTrigger.create({
+      trigger: ".animate__sec-inner",
+      start: "center bottom",
+      end: "center top",
+      onUpdate: e => {
+        gsap.to(".animate__sec-inner", {
+          xPercent: 100 * -e.progress
+        })
+      }
+    });
   }
 });
+
+
+
 
 // btn on click
 $('.btn').click(function () {
