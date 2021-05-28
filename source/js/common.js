@@ -275,9 +275,9 @@ $('.menu__hover').hover(function () {
 
 $(document).ready(function () {
   $('#ifd').css({
-    '-webkit-transform': 'scale(0.7)',
-    '-webkit-transform-origin': '0 0',
-    'width': '100%',
+    // '-webkit-transform': 'scale(0.7)',
+    // '-webkit-transform-origin': '0 0',
+    'min-width': '100%',
     'height': '100%'
 });
 });
