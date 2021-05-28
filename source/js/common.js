@@ -202,3 +202,6 @@ $('.header__nav-link').hover(function () {
 	$('.overlay').toggleClass('overlay--display')
 });
 
+$('.menu__hover').hover(function () {
+	$('.overlay').toggleClass('overlay--display')
+});
