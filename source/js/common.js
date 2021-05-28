@@ -275,7 +275,7 @@ $('.menu__hover').hover(function () {
 
 $(document).ready(function () {
   $('#iframe_container').css({
-    '-webkit-transform': 'scale(0.7)',
+    '-webkit-transform': 'scale(1.5)',
     '-webkit-transform-origin': '0 0',
     'width': '100%',
     'height': '100%'
