@@ -175,7 +175,7 @@ $(function () {
   function e() {
     $(".slide-progress").css({
       width: "100%",
-      transition: "width 5000ms"
+      transition: "width 9600ms"
     })
   }
 
@@ -185,16 +185,81 @@ $(function () {
       transition: "width 0s"
     })
   }
+
   $(".owl-carousel").owlCarousel({
     items: 1,
     loop: !0,
+    animateOut: 'fadeOut',
     dotsContainer: ".system__bot",
     dots: !0,
-    autoplay: !0,
-    onInitialized: e,
+    // autoplay: !0,
+    // autoplayTimeout : 10000,
+    onInitialize: firstStart,
     onTranslate: t,
     onTranslated: e
-  })
+  });
+
+  function firstStart() {
+    $(".slide-progress").css({
+      width: 0,
+      transition: "width 0s"
+    });
+    setTimeout(() => {
+      $(".slide-progress").css({
+        width: "100%",
+        transition: "width 9600ms"
+      })
+    }, 1000);
+    startSlide();
+  }
+
+  var animationSlide = function(num) {
+    setTimeout(() => {
+      $('.system__title').eq(num).addClass('animate-fadeIn');
+      $('.system__right').eq(num).addClass('animate-fadeIn');
+    },
+    500);
+
+    setTimeout(() => {
+      $('.system__subtitle').eq(num).addClass('animate-fadeIn');
+    },
+    1000);
+
+    setTimeout(() => {
+      $('.system__btns').eq(num).addClass('animate-fadeIn');
+    },
+    1500);
+  }
+
+  $('.owl-carousel').on('translate.owl.carousel', function(e) {
+
+    var index = e.item.index;
+
+    startSlide();
+
+    $('.owl-stage').find('.animate-fadeIn').removeClass('animate-fadeIn');
+
+    animationSlide(index);
+
+  });
+
+  var timeout;
+
+  function startSlide() {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      $(".owl-carousel").trigger('next.owl.carousel');
+    }, 10000);
+  }
+
+  // $('.owl-carousel').on('next.owl.carousel', function(e) {
+  //   startSlide();
+  // });
+  // $('.system__bot-item:not(.active)').on('click', function() {
+  //   startSlide();
+  // });
+
+
 });
 
 // menu overlay
