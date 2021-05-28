@@ -6,6 +6,7 @@
 *.pdf
 *.psd
 *.sublime*
+*.zip
 build/
 docs/
 node_modules/

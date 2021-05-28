@@ -4,6 +4,10 @@
     min-width: 980px;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .footer__mid-item:first-child {
     padding: 20px 20px 0 0;
   }
@@ -128,6 +132,25 @@
 
   .publication__item + .publication__item {
     margin-left: 10px;
+  }
+
+  .menu__erip {
+    left: 14%;
+    padding-left: 17px;
+  }
+
+  .menu__epos {
+    left: 23%;
+    padding-left: 20px;
+  }
+
+  .menu__services {
+    left: 34%;
+  }
+
+  .menu__contacts {
+    left: 42%;
+    padding-left: 10px;
   }
 }
 
@@ -673,7 +696,7 @@
   }
 
   .contacts__map {
-    width: 100%;
+    min-width: 100%;
   }
 
   .contacts__inner {
@@ -1886,7 +1909,7 @@
 
   .contacts__map {
     height: 290px;
-    width: 100%;
+    min-width: 100%;
   }
 
   .contacts__map-img {
@@ -3291,7 +3314,7 @@
 
   .contacts__map {
     height: 290px;
-    width: 100%;
+    min-width: 100%;
   }
 
   .contacts__map-img {
