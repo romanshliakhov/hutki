@@ -2,7 +2,7 @@
 $(".hamburger").click(function (event) {
   $(".hamburger").toggleClass('hamburger__active'),
     $(".mobile__menu ").toggleClass('mobile__menu__active');
-      $('body').toggleClass('body__scroll');
+  $('body').toggleClass('body__scroll');
 });
 
 // переменная не переназначается, поэтому используем const
@@ -116,8 +116,8 @@ window.addEventListener('resize', () => {
 
 
 // dinamic row
-$(function(){
-  if ($(window).width() < 769 ) {
+$(function () {
+  if ($(window).width() < 769) {
     ScrollTrigger.create({
       trigger: ".animate__sec-inner",
       start: "center bottom",
@@ -130,7 +130,7 @@ $(function(){
     });
   }
 
-  if ($(window).width() > 769 ) {
+  if ($(window).width() > 769) {
     ScrollTrigger.create({
       trigger: ".animate__sec-inner",
       start: "center bottom",
@@ -213,25 +213,25 @@ $(function () {
     startSlide();
   }
 
-  var animationSlide = function(num) {
+  var animationSlide = function (num) {
     setTimeout(() => {
-      $('.system__title').eq(num).addClass('animate-fadeIn');
-      $('.system__right').eq(num).addClass('animate-fadeIn');
-    },
-    500);
+        $('.system__title').eq(num).addClass('animate-fadeIn');
+        $('.system__right').eq(num).addClass('animate-fadeIn');
+      },
+      500);
 
     setTimeout(() => {
-      $('.system__subtitle').eq(num).addClass('animate-fadeIn');
-    },
-    1000);
+        $('.system__subtitle').eq(num).addClass('animate-fadeIn');
+      },
+      1000);
 
     setTimeout(() => {
-      $('.system__btns').eq(num).addClass('animate-fadeIn');
-    },
-    1500);
+        $('.system__btns').eq(num).addClass('animate-fadeIn');
+      },
+      1500);
   }
 
-  $('.owl-carousel').on('translate.owl.carousel', function(e) {
+  $('.owl-carousel').on('translate.owl.carousel', function (e) {
 
     var index = e.item.index;
 
@@ -264,9 +264,20 @@ $(function () {
 
 // menu overlay
 $('.header__nav-link').hover(function () {
-	$('.overlay').toggleClass('overlay--display')
+  $('.overlay').toggleClass('overlay--display')
 });
 
 $('.menu__hover').hover(function () {
-	$('.overlay').toggleClass('overlay--display')
+  $('.overlay').toggleClass('overlay--display')
+});
+
+// frame
+
+$(document).ready(function () {
+  $('#iframe_container').css({
+    '-webkit-transform': 'scale(0.7)',
+    '-webkit-transform-origin': '0 0',
+    'width': '100%',
+    'height': '100%'
+  });
 });
