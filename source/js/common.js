@@ -272,12 +272,11 @@ $('.menu__hover').hover(function () {
 });
 
 // frame
-
 $(document).ready(function () {
   $('#ifd').css({
-    // '-webkit-transform': 'scale(0.7)',
-    // '-webkit-transform-origin': '0 0',
-    'min-width': '100%',
+    'transform': 'scale(0.7)',
+    'transformOrigin': '0 0',
+    'minWidth': '100%',
     'height': '100%'
-});
+  });
 });
