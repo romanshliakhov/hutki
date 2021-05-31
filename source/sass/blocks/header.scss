@@ -74,6 +74,11 @@
   }
 }
 
+.header__nav-link {
+  display: flex;
+  align-items: baseline;
+}
+
 .header__nav-arrow {
   margin-left: 5px;
   stroke-width: 2px;

@@ -130,9 +130,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s all ease-in;
 
   & + & {
     margin-left: 20px;
+  }
+
+  &:hover {
+    background-color: #ff5b22;
   }
 }
 
@@ -141,12 +146,9 @@
     height: 20px;
     width: 20px;
     fill: #ffffff;
-  }
-
-  &:hover {
-    svg {
-      fill: #ff5b22;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -240,4 +242,3 @@
   width: 15px;
   margin-right: 5px;
 }
-

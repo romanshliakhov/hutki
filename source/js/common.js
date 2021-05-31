@@ -271,12 +271,3 @@ $('.menu__hover').hover(function () {
   $('.overlay').toggleClass('overlay--display')
 });
 
-// frame
-$(document).ready(function () {
-  $('#ifd').css({
-    'transform': 'scale(0.7)',
-    'transformOrigin': '0 0',
-    'minWidth': '100%',
-    'height': '100%'
-  });
-});
